@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INCREME BRANDING COMPANY</title>
+
+    <style>
+
+        body{
+            margin:0;
+            font-family:Arial, Helvetica, sans-serif;
+            display:flex;
+            background-color:blue;
+        }
+
+        /* SIDEBAR */
+        .sidebar{
+            width:240px;
+            height:100vh;
+            background-color:aqua;
+            position:fixed;
+            color:white;
+            display:flex;
+            flex-direction:column;
+            overflow:hidden;
+        }
+
+        .logo{
+            text-align:center;
+            padding:20px;
+            font-size:22px;
+            font-weight:bold;
+            border-bottom:2px solid #34495e;
+        }
+
+        /* COMPANY LOGO */
+        .company-logo{
+            width:200px;
+            height:120px;
+            margin:auto;
+            display:block;
+            object-fit:contain;
+            padding:10px;
+        }
+
+        /* NAVIGATION */
+        .nav-links{
+            display:flex;
+            flex-direction:column;
+        }
+
+        .nav-links a{
+            color:blue;
+            text-decoration:none;
+            padding:15px;
+            border-bottom:1px solid #34495e;
+            transition:0.3s;
+        }
+
+        .nav-links a:hover{
+            background-color:#34495e;
+        }
+
+        /* FOOTER */
+        .footer{
+            margin-top:auto;
+            padding:15px;
+            text-align:center;
+            background:#233140;
+        }
+
+        /* MAIN CONTENT */
+        .content{
+            margin-left:240px;
+            padding:30px;
+            width:calc(100% - 240px);
+            box-sizing:border-box;
+        }
+
+        h1{
+            color:aqua;
+        }
+        p{color: white;
+        font-size: 27px;}
+
+        /* GALLERY */
+        .slider{
+            width:700px;
+            height:400px;
+            margin:30px auto;
+            overflow:hidden;
+            border-radius:10px;
+            position:relative;
+            background:white;
+        }
+
+        /* MOVING ROW */
+        .slide-track{
+            display:flex;
+            height:400px;
+            width:max-content;
+
+            animation:continuousMove 30s linear infinite;
+        }
+
+        /* FULL IMAGES */
+        .slide-track img{
+            width:700px;
+            height:400px;
+
+            /* Show the COMPLETE image */
+            object-fit:contain;
+
+            /* Background around images */
+            background:white;
+
+            flex-shrink:0;
+            display:block;
+        }
+
+        /* CONTINUOUS SLIDING */
+        @keyframes continuousMove{
+
+            from{
+                transform:translateX(0);
+            }
+
+            to{
+                transform:translateX(-3500px);
+            }
+
+        }
+
+        /* SERVICES */
+        ul{
+            line-height:2;
+            color: white;
+            font-size: 27px;
+        }
+       
+
+    </style>
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+        <div class="logo" style="color: blue;">
+            INCREME COMPANY
+        </div>
+
+        <img src="inkcreme.png"
+             alt="Company Logo"
+             class="company-logo">
+
+        <div class="nav-links">
+
+            <a href="home.html">Home</a>
+
+            <a href="Aboutus.html">About Us</a>
+
+            <a href="our products">Products</a>
+
+            <a href="ourgallary">Gallery</a>
+
+            <a href="contactus.php">Contact Us</a>
+
+        </div>
+
+        <div class="footer">
+            © 2026 Increme Company
+        </div>
+
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+    <div class="content">
+
+        <h1>Our Work Gallery</h1>
+
+        <!-- IMAGE SLIDER -->
+        <div class="slider">
+
+            <div class="slide-track">
+
+                <!-- FIRST SET -->
+                <img src="inkcreme.PNG"
+                     alt="Increme Company">
+                      <img src="kola.JPG.jpeg"
+                     alt="Increme Work">
+                <img src="marell.JPG.jpeg"
+                     alt="Increme Work">
+                <img src="marell.road.png"
+                     alt="Increme Work">
+                <img src="super.JPG.jpeg"
+                     alt="Increme Work">
+
+                <img src="BCH van.jpeg"
+                     alt="BCH Van Branding">
+
+
+                <!-- SECOND SET -->
+                <img src="inkcreme.PNG"
+                     alt="Increme Company">
+
+                <img src="image1.png"
+                     alt="Increme Work">
+
+                <img src="image2.png"
+                     alt="Increme Work">
+
+                <img src="car brand.JPG"
+                     alt="Car Branding">
+
+                <img src="BCH van.jpeg"
+                     alt="BCH Van Branding">
+
+            </div>
+
+        </div>
+
+
+        <h1>
+            Welcome to INCREME COMPANY
+        </h1>
+
+        <p>
+            We specialize in professional branding and printing services.
+        </p>
+
+
+        <h1>
+            Our Main Services
+        </h1>
+
+        <ul>
+            <li>3D Design</li>
+            <li>Banners</li>
+            <li>Road Signs</li>
+            <li>Backlit Signs</li>
+            <li>Car Branding</li>
+            <li>Printing Services</li>
+        </ul>
+
+    </div>
+
+</body>
+</html>

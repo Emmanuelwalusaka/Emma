@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+    <style>
+        *{
+            margin: 0;
+            padding:5;
+            box-sizing: border-box;
+          
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: snow;
+            color: black;
+
+
+        }
+        .products_section
+        {
+            width: 75%;
+            min-height:75vh;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: azure;
+            border-radius: 12px;
+
+        }
+        
+        .products_container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px; 
+        }
+        .product_box{
+            background-color: #f1fff4;
+            border-left: 6px solid#138a36;
+            padding: 20px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .product_box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .product_box h2 {
+            color: #138a36;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .product_box p {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        .why_us{
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #138a36;
+            color: white;
+            border-radius: 8px;
+        }
+        .why_us h2{
+            margin-bottom: 10px;
+            color: aqua;
+        }
+        
+    </style>
+</head>
+<body>
+    <style>
+        body{
+            background-color: blue;
+        }
+        .product-box {
+            background-color: #f1fff4;
+            border-left: 6px solid #138a36;
+            padding: 20px;
+            border-radius: 8px;
+            transition: 0.3s;
+
+        }
+    </style>
+<h1 style="color: cyan;margin-bottom: 10px;text-align: center;">Our Products and services</h1><br>
+ <p clas="introduction" style="text-align: center;color:white;font-size: 26px;">
+            Increme Creations designs and brand professional signage, branding,
+            advertising,<br> and printing solutions to help your business stand out.
+        </p>
+<section class="products_section">
+
+       
+        <div class="products_container">
+         <div class="product_box">
+            <h2>3D signs</h2>
+             <p>
+                    We design and manufacture modern, attractive, and durable
+                    3D signs for shops, offices, buildings, and businesses.
+                    We offer 3D letters, acrylic signs, LED signs, logo signs,
+                    and custom indoor or outdoor signage.
+                </p>
+                <img src="image2.png" width="400" height="200">
+         </div>  
+         <div class="product_box">
+            <h2>banner branding</h2>
+        
+                  <p>
+                    We design and manufacture modern, attractive, and durable
+                    3D signs for shops, offices, buildings, and businesses.
+                    We offer 3D letters, acrylic signs, LED signs, logo signs,
+                    and custom indoor or outdoor signage.
+                </p>
+                <img src="springs.png" width="400" height="200">
+        
+         </div> 
+         <div class="product_box">
+            <h2>Road signs</h2>
+            <p>
+                
+                    We design and manufacture clear, durable, and easy-to-read
+                    road and safety signs. Our products include warning signs,
+                    direction signs, traffic signs, parking signs, and
+                    custom safety signage.
+            </p>
+            <img src="roadsign.png" width="350" height="200">
+         </div>
+         <div class="product_box">
+            <h2>car branding</h2>
+            <p>
+                    We provide full and partial vehicle branding,
+                    company logos, vehicle stickers, custom graphics,
+                    and fleet branding.
+            </p>
+            <img src="car brand.JPG" width="400" height="200">
+         </div>
+         <div class="product_box" >
+            <h2 style="grid-column: span 2;">Printing Service</h2>
+              <p>
+                    We provide professional printing services for business
+                    cards, flyers, brochures, posters, stickers, receipt books,
+                    company profiles, certificates, branded items, and other
+                    promotional materials.
+                </p>
+         </div>
+         <div class="why_us">
+            <h2>Why choose Increme Creation</h2>
+            <p>
+                Creative & Professional design and work <br>
+                High-quality branding materials<br>
+                Affortable prices for clients<br>
+                Reiable and timely Services<br>
+                We make your stand out
+            </p>
+         </div>
+        </div>
+<a href="Home.html">Back Creation</a>
+</section>
+
+
+
+</body>
+</html>

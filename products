@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products | Increme Creation</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #222;
+        }
+
+        /* Products section */
+        .products-section {
+            width: 75%;
+            min-height: 75vh;
+            margin: 40px auto;
+            padding: 35px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Heading */
+        .products-section h1 {
+            text-align: center;
+            color: #138a36;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            text-align: center;
+            font-size: 17px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Product boxes */
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .product-box {
+            background-color: #f1fff4;
+            border-left: 6px solid #138a36;
+            padding: 20px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .product-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-box h2 {
+            color: #138a36;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .product-box p {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        /* Last product covers both columns */
+        .printing {
+            grid-column: span 2;
+        }
+
+        /* Why choose us */
+        .why-us {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #138a36;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .why-us h2 {
+            margin-bottom: 10px;
+        }
+
+        .why-us p {
+            line-height: 1.8;
+        }
+
+        /* Mobile phone layout */
+        @media (max-width: 700px) {
+            .products-section {
+                width: 92%;
+                padding: 20px;
+            }
+
+            .products-container {
+                grid-template-columns: 1fr;
+            }
+
+            .printing {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="products-section">
+
+        <h1>Our Products and Services</h1>
+
+        <p class="intro">
+            Increme Creation provides professional signage, branding,
+            advertising, and printing solutions to help your business stand out.
+        </p>
+
+        <div class="products-container">
+
+            <!-- 3D Signs -->
+            <div class="product-box">
+                <h2>3D Signs</h2>
+
+                <p>
+                    We design and manufacture modern, attractive, and durable
+                    3D signs for shops, offices, buildings, and businesses.
+                    We offer 3D letters, acrylic signs, LED signs, logo signs,
+                    and custom indoor or outdoor signage.
+                </p>
+            </div>
+
+            <!-- Banners -->
+            <div class="product-box">
+                <h2>Banners</h2>
+
+                <p>
+                    We produce high-quality and colourful banners for
+                    businesses, events, promotions, schools, churches,
+                    and special occasions. Our banners are available
+                    in different sizes for indoor and outdoor use.
+                </p>
+                <img src="springs.png" width="200" height="100">
+            </div>
+
+            <!-- Road Signs -->
+            <div class="product-box">
+                <h2>Road Signs</h2>
+
+                <p>
+                    We design and manufacture clear, durable, and easy-to-read
+                    road and safety signs. Our products include warning signs,
+                    direction signs, traffic signs, parking signs, and
+                    custom safety signage.
+                </p>
+            </div>
+
+            <!-- Car Branding -->
+            <div class="product-box">
+                <h2>Car Branding</h2>
+
+                <p>
+                    Turn your vehicle into a moving advertisement.
+                    We provide full and partial vehicle branding,
+                    company logos, vehicle stickers, custom graphics,
+                    and fleet branding.
+                </p>
+            </div>
+
+            <!-- Printing -->
+            <div class="product-box printing">
+                <h2>Printing Services</h2>
+
+                <p>
+                    We provide professional printing services for business
+                    cards, flyers, brochures, posters, stickers, receipt books,
+                    company profiles, certificates, branded items, and other
+                    promotional materials.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Why Choose Us -->
+        <div class="why-us">
+
+            <h2>Why Choose Increme Creation?</h2>
+
+            <p>
+                ✓ Creative and professional designs &nbsp; | &nbsp;
+                ✓ High-quality materials &nbsp; | &nbsp;
+                ✓ Affordable prices &nbsp; | &nbsp;
+                ✓ Custom-made solutions &nbsp; | &nbsp;
+                ✓ Reliable and timely services
+            </p>
+
+        </div>
+        
+
+    </section>
+
+</body>
+</html>
